@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my porfolio website!</title>
+    <link rel="stylesheet" type="text/css" href="css/img.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/scroll.js"></script>
+    <style>
+        .image {
+            position: relative;
+            /* To help the image + text element to get along with the rest of the page*/
+            width: 100%;
+            /* for IE 6 */
+        }
+
+        h2 {
+            position: absolute;
+            /* To place the text on the image*/
+            top: 12vw;
+            /* The exact location of the text from the top of the image*/
+            left: 23vw;
+            /* Other beautification stuff */
+            /* width: 100%; */
+        }
+
+        #headIm {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Coloring time */
+        h2 span
+
+        /* decorating the text within the span tag */
+            {
+            color: white;
+            font: bold 5vw Helvetica, Sans-Serif;
+            letter-spacing: -1px;
+            background: rgb(0, 0, 0);
+            /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        h2 span.spacer {
+            padding: 0 5px;
+        }
+
+        #intro{
+            height: 20vw;
+        }
+        #cont {
+            height: 27vw;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="homepage.html">Naim</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+    <div class="image">
+        <!-- the image container -->
+        <img src="img/4020.jpg" alt="" id="headIm" /> <!-- the image -->
+        <h2>
+            <span>Welcome</span><br><br>
+            <span>Selamat Datang</span>
+            <!-- span tag to beautify it efficiently -->
+        </h2> <!-- the text -->
+    </div>
+
+    <div id="intro"  style="padding-top: 7vw;padding-bottom: 15vw;background-color: #D7E5E5;">
+        <div class="intro">
+            <center>
+                <h1>Welcome to my portfolio website!</h1>
+                <p>
+                    Thank you for visiting my website. In this website, I would like to share my thought(blog),
+                    project that I had done before and things about myself as junior web developer.
+                </p>
+            </center>
+        </div>
+        
+    </div>
+
+    <div class="container-fluid" id="cont" style="">
+        <div class="row">
+            <div class="col-md-6" style="padding-left: 10%; padding-top: 5vw;">
+
+                <h1>Work</h1>
+                <p>
+                    I would like to show some of my project that <br>I had done during my university year and freelance
+                </p>
+
+            </div>
+            <div class="col-md-6" style="padding-left: 0; padding-top: 2vw;">
+                <center>
+                    <img src="img/home/work.jpg" width="80%" height="60%">
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="cont" style="">
+        <div class="row">
+            <div class="col-md-6" style="padding-left: 0; padding-top: 1vw;">
+                <center>
+                    <img src="img/home/work.jpg" width="80%" height="60%">
+                </center>
+            </div>
+            <div class="col-md-6" style="padding-left: 10%; padding-top: 5vw;">
+                <h1>About Me</h1>
+                <p>
+                    Introducing mysef to world might be hard<br> but without it nobody will know my existence
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container-fluid" id="cont" style="">
+        <div class="row">
+            <div class="col-md-6" style="padding-left: 10%; padding-top: 5vw;">
+
+                <h1>Feedback</h1>
+                <p>
+                    If you have any thoughts,feedback or anything to share, <br>feel free to visit the feedback page.  
+                </p>
+
+            </div>
+            <div class="col-md-6" style="padding-left: 0; padding-top: 1vw;">
+                <center>
+                    <img src="img/home/work.jpg" width="80%" height="60%">
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="cont" style="">
+        <div class="row">
+            <div class="col-md-6" style="padding-left: 0; padding-top: 1vw;">
+                <center>
+                    <img src="img/home/work.jpg" width="80%" height="60%">
+                </center>
+            </div>
+            <div class="col-md-6" style="padding-left: 10%; padding-top: 5vw;">
+                <h1>Blog</h1>
+                <p>
+                    Introducing mysef to world might be hard<br> but without it nobody will know my existence
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <div id="1" style="height: 20vw;" >
+        <div class="row">
+            <div class="col-md-6" id="cont1">.col-12 .col-md-8
+                <h3>1. VWORLD.com</h3>
+                <p>
+                    This website host as a travelling site for tourists and traveller all around the globe.
+                    Its similar to trivago and airbnb.
+                </p>
+            </div>
+            <div class="col-md-6" id="cont2">.col-6 .col-md-4</div>
+        </div>
+    </div> -->
+
+
+
+</body>
+
+</html>
