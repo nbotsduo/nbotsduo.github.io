@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me?</title>
+    <style>
+        #title{
+            background-image: url('img/about.jpg');
+            color: white;
+        }
+        #abt span,
+        #abt-def span {
+            background-color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/content.css" rel="stylesheet" type="text/css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light " id="nav">
+        <a class="navbar-brand" href="homepage.html">Naim</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="homepage.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="feedback.html">Feedback <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+    <div id="title">
+        <div id="titleDef">
+            <h1 id="abt"><span>&nbsp;About Me...&nbsp;</span></h1>
+            <p id="abt-def"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May I introduce myself?&nbsp;</span></p>
+        </div>
+    </div>
+    <div id="content">
+        <div class="row">
+            <div class="col-12 col-md-8" id="cont1">
+                <h1>Greetings!</h1><br>
+
+                <p>
+                    Hi, I'm Naim
+
+                    I'm a student, part time junior web developer who is passionate about creating
+                    beautiful and dynamic website.<br><br>
+
+                    I thinking of a website as a canvas for me to express my creativity and expression as 
+                    how artists express their messages through songs.<br><br>
+                    
+                    I have help many company create their own website and publish it online for commercial use.
+                    I add some ideas into the clients website as what will attract potential customers to visit their website.
+                    And hopefully, the potential become a customer.<br><br>
+
+                    If anyone would like to contact me, dont be shy and just click any of my
+                    social media platform at the link down below 😊
+                </p>
+                <a href="https://twitter.com/intent/tweet?screen_name=naimon_99&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @naimon_99</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <p id="debug"></p>
+            </div>
+            <div class="col-6 col-md-4" id="cont2">
+                <center>
+                    <img src="img/about.jpeg" class="img-fluid" alt="Responsive image">
+                    <!-- <img src="img/about.jpeg"> -->
+                
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        var h = $('#content').height($(window).height() - ($('#title').height() + $('#nav').height()));
+        document.getElementById("debug").innerHTML = $(window).height();
+    </script> -->
+    <div class="footer">
+        <p>Made with ❤️ by Naim</p>
+      </div>
+</body>
+
+</html>

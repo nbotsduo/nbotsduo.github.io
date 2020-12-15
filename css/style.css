@@ -1,0 +1,40 @@
+.head1{
+    position: relative;
+    display: inline-block;
+
+}
+
+#headIm{
+    max-width: 100%; height: auto;
+}
+
+.head1 .text{
+    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.8);
+        font-family: Arial,sans-serif;
+        color: #fff;
+        width: 60%;
+}
+
+/* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.head h1{
+    font-size: 7em;
+    line-height: 1em;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+} */

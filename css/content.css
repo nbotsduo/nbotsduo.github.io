@@ -1,0 +1,38 @@
+#title{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+#titleDef {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+}
+
+#abt {
+    font-size: 70px;
+}
+
+#abt-def {
+    font-size: 20px;
+}
+
+#content {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    background-color: aliceblue;
+    padding: 2%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 0.5%;
+    width: 100%;
+    background-color: #B4DAD9;
+    color: white;
+    text-align: center;
+  }
