@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my porfolio website!</title>
+    <link rel="stylesheet" type="text/css" href="css/img.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/scroll.js"></script>
+    <link href="css/content.css" rel="stylesheet" type="text/css">
+    <style>
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .head1 {
+            /* This section calls the slideInFromLeft animation we defined above */
+            animation: 1s ease-out 0s 1 slideInFromBottom;
+            animation-duration: 1s;
+            /* the duration of the animation */
+            animation-timing-function: ease-out;
+            /* how the animation will behave */
+            animation-delay: 0s;
+            /* how long to delay the animation from starting */
+            animation-iteration-count: 1;
+            /* how many times the animation will play */
+            animation-name: slideInFromLeft;
+            /* the name of the animation we defined above */
+        }
+
+        .image {
+            position: relative;
+            /* To help the image + text element to get along with the rest of the page*/
+            width: 100%;
+            /* for IE 6 */
+        }
+
+        h2 {
+            position: absolute;
+            /* To place the text on the image*/
+            top: 12vw;
+            /* The exact location of the text from the top of the image*/
+            left: 6vw;
+            /* Other beautification stuff */
+            /* width: 100%; */
+        }
+
+        #headIm {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Coloring time */
+        h2 span
+
+        /* decorating the text within the span tag */
+            {
+            color: white;
+            font: bold 5vw Helvetica, Sans-Serif;
+            letter-spacing: -1px;
+            background: rgb(0, 0, 0);
+            /* fallback color */
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        h2 span.spacer {
+            padding: 0 5px;
+        }
+
+        #intro {
+            height: 20vw;
+        }
+
+        #cont {
+            height: 27vw;
+        }
+    </style>
+</head>
+
+<body onload="onLoad()">
+    <div class="image">
+        <!-- the image container -->
+        <img src="img/4020.jpg" alt="" id="headIm" /> <!-- the image -->
+        <div class="head1">
+            <h2>
+                <span>Welcome</span><br><br>
+                <span>Selamat Datang</span>
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>
