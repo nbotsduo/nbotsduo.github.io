@@ -26,6 +26,14 @@
     background-color: aliceblue;
     padding: 2%;
 }
+#wisdom{
+    background-color: #61c2d3;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    padding: 2%;
+    color: white;
+}
 .footer {
     position: fixed;
     left: 0;

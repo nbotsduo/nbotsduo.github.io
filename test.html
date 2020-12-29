@@ -3,11 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to my porfolio website!</title>
-    <link rel="stylesheet" type="text/css" href="css/img.css">
+    <title>Feedback</title>
+    <style>
+        #title {
+            background-image: url('img/feed.png');
+            color: white;
+        }
+
+        #abt span,
+        #abt-def span {
+            background-color: black;
+        }
+
+        #feed {
+            background-color: aliceblue;
+            padding: 2%;
+        }
+    </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/content.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -19,94 +35,104 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/scroll.js"></script>
-    <link href="css/content.css" rel="stylesheet" type="text/css">
-    <style>
-        @keyframes slideInFromBottom {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        .head1 {
-            /* This section calls the slideInFromLeft animation we defined above */
-            animation: 1s ease-out 0s 1 slideInFromBottom;
-            animation-duration: 1s;
-            /* the duration of the animation */
-            animation-timing-function: ease-out;
-            /* how the animation will behave */
-            animation-delay: 0s;
-            /* how long to delay the animation from starting */
-            animation-iteration-count: 1;
-            /* how many times the animation will play */
-            animation-name: slideInFromLeft;
-            /* the name of the animation we defined above */
-        }
-
-        .image {
-            position: relative;
-            /* To help the image + text element to get along with the rest of the page*/
-            width: 100%;
-            /* for IE 6 */
-        }
-
-        h2 {
-            position: absolute;
-            /* To place the text on the image*/
-            top: 12vw;
-            /* The exact location of the text from the top of the image*/
-            left: 6vw;
-            /* Other beautification stuff */
-            /* width: 100%; */
-        }
-
-        #headIm {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Coloring time */
-        h2 span
-
-        /* decorating the text within the span tag */
-            {
-            color: white;
-            font: bold 5vw Helvetica, Sans-Serif;
-            letter-spacing: -1px;
-            background: rgb(0, 0, 0);
-            /* fallback color */
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-        }
-
-        h2 span.spacer {
-            padding: 0 5px;
-        }
-
-        #intro {
-            height: 20vw;
-        }
-
-        #cont {
-            height: 27vw;
-        }
-    </style>
 </head>
 
 <body onload="onLoad()">
-    <div class="image">
-        <!-- the image container -->
-        <img src="img/4020.jpg" alt="" id="headIm" /> <!-- the image -->
-        <div class="head1">
-            <h2>
-                <span>Welcome</span><br><br>
-                <span>Selamat Datang</span>
-            </h2>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light " id="nav">
+        <a class="navbar-brand" href="index.html">Naim</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="feedback.html">Feedback <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </form>
         </div>
+    </nav>
+    <div id="title">
+        <div id="titleDef">
+            <h1 id="abt"><span>&nbsp;Feedback...&nbsp;</span></h1>
+            <p id="abt-def"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your feedback is really meant to me
+                    ❤️❤️❤️❤️&nbsp;</span></p>
+        </div>
+    </div>
+
+    <br><br>
+    <form id="jquery_form">
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="text" placeholder="Message" ></textarea>
+        <input type="submit" name="send" value="Send" />
+    
+        <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+        <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+    </form>
+    
+    <script>
+    
+        //update this with your $form selector
+        var form_id = "jquery_form";
+    
+        var data = {
+            "access_token": "0vda92p3sjvsvc6uvanylm9d"
+        };
+    
+        function onSuccess() {
+            // remove this to avoid redirect
+            window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+        }
+    
+        function onError(error) {
+            // remove this to avoid redirect
+            window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+        }
+    
+        var sendButton = $("#" + form_id + " [name='send']");
+    
+        function send() {
+            sendButton.val('Sending…');
+            sendButton.prop('disabled',true);
+    
+            var subject = $("#" + form_id + " [name='subject']").val();
+            var message = $("#" + form_id + " [name='text']").val();
+            data['subject'] = subject;
+            data['text'] = message;
+    
+            $.post('https://postmail.invotes.com/send',
+                data,
+                onSuccess
+            ).fail(onError);
+    
+            return false;
+        }
+    
+        sendButton.on('click', send);
+    
+        var $form = $("#" + form_id);
+        $form.submit(function( event ) {
+            event.preventDefault();
+        });
+    </script>
+    <div class="footer">
+        <p>Made with ❤️ by Naim</p>
     </div>
 </body>
 

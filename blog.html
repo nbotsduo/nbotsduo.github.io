@@ -30,6 +30,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
     <link href="css/content.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="js/wisdom.js" defer></script>
 </head>
 
 <body>
@@ -67,6 +69,19 @@
         <div id="titleDef">
             <h1 id="abt"><span>&nbsp;Blog&nbsp;</span></h1>
             <p id="abt-def"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Something to share with others....&nbsp;</span></p>
+        </div>
+    </div>
+    <div id="wisdom">
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <center>
+                    <img src="img/tenor.gif">
+                </center>
+            </div>
+            <div class="col-12 col-md-8">
+                <h2>Wisdom Word of the day</h2>
+                <p><i>{{ wisdomWord() }}</i></p>
+            </div>
         </div>
     </div>
     <div id="content">
